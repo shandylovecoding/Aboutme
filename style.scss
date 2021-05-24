@@ -58,7 +58,6 @@ a {
     display: flex;
     justify-content: space-between;
     position: relative;
-    background: url(images/logo.JPG);
     width: 80px;
     height: 80px;
     cursor: pointer;
@@ -139,6 +138,7 @@ a {
     font-family: var(--font-mono);
     writing-mode: vertical-rl;
     font-family: 'Dancing Script', cursive;
+    font-size: 20px;
 }
 
 .email::after {
@@ -190,7 +190,9 @@ section {
     padding: 100px 0px;
     max-width: 1000px;
 }
-
+h1{
+ text-align: center
+}
 h1, h2, h3, h4, h5, h6 {
     margin: 0px 0px 10px;
     font-weight: 600;
@@ -214,13 +216,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 .aboutPhoto img{
     position: relative;
-    max-width: 250px;
+    max-width: 210px;
     border-radius: 4px;
     margin: 0px;
     padding: 0px;
     
 }
-@media (max-width: 768px){
+@media (max-width: 950px){
     .aboutme .inner {
         display: block;
     }

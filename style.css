@@ -80,7 +80,6 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-  background: url(images/logo.JPG);
   width: 80px;
   height: 80px;
   cursor: pointer;
@@ -174,6 +173,7 @@ a {
       -ms-writing-mode: tb-rl;
           writing-mode: vertical-rl;
   font-family: 'Dancing Script', cursive;
+  font-size: 20px;
 }
 
 .email::after {
@@ -232,6 +232,10 @@ section {
   margin: 0px auto;
   padding: 100px 0px;
   max-width: 1000px;
+}
+
+h1 {
+  text-align: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
