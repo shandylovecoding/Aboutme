@@ -210,7 +210,7 @@ h1, h2, h3, h4, h5, h6 {
 .aboutPhoto{
     display: block;
     position: relative;
-    width: 100%;
+    width: 220px;
     box-shadow: 0 10px 30px -15px var(--brown);
     margin: 0px;
 }
@@ -232,7 +232,9 @@ h1, h2, h3, h4, h5, h6 {
         width: 70%;
     }
 }
-
+.dream{
+    padding-top: 50px;
+}
 .dream h1{
     font-family: 'Dancing Script', cursive;
     color: var(--brown);
@@ -273,17 +275,19 @@ h1, h2, h3, h4, h5, h6 {
     height: 100%;
     padding: 1.5rem 1.5rem;
     border-radius:4px;
-    // background-color:var(--beige);
-    /* transition: var(--transition); */
+    
 }
 .dream h2, .hobbydiv h1{
     font-family: 'Dancing Script', cursive;
     color: var(--beige);
     font-size: 40px;
 }
+
+
 .hobbydiv img{
     width: 250px;
     height: 250px;
+    
 }
 
 
