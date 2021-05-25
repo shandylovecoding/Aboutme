@@ -9,7 +9,7 @@
 :root {
     --gray:hsl(196, 8%, 73%);
     --darkgray: hsl(225, 6%, 49%);
-    --beige: hsl(33, 21%, 90%);
+    --beige: #ebe6e0;
     --pink: hsl(15, 29%, 79%);
     --ltgray: hsl(210, 6%, 94%);
     --brown: hsl(64, 8%, 36%);
@@ -81,6 +81,62 @@ a {
 .menuli li a:hover{
     color: var(--pink);
 }
+.menu-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    /* border: 3px solid #fff; */
+  }
+  .menu-btn__burger {
+    width: 20px;
+    height: 3px;
+    background:var(--brown);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+  }
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    background:var(--brown);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(255,101,47,.2);
+    transition: all .5s ease-in-out;
+    
+  }
+  .menu-btn__burger::before {
+    transform: translateY(0px);
+    top:1.65rem;
+    
+  }
+  .menu-btn__burger::after {
+    transform: translateY(0px);
+    top:0.75rem;
+    
+  }
+  /* ANIMATION */
+  .menu-btn.open .menu-btn__burger {
+    
+    background: transparent;
+    box-shadow: none;
+  }
+  .menu-btn.open .menu-btn__burger::before {
+    transform: rotate(0.125turn) translateY(-10px);
+
+  }
+  .menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-0.125turn) translateY(10px);
+    
+  }
+  
 
 .side{
     width: 40px;

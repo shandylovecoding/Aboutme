@@ -16,7 +16,7 @@
   --beige: hsl(33, 21%, 90%);
   --pink: hsl(15, 29%, 79%);
   --ltgray: hsl(210, 6%, 94%);
-  --brown: hsl(64, 8%, 36%);
+  --brown: #626354;
   --paddingX: 2rem;
   --paddingY: 1.5rem;
   --transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
@@ -102,6 +102,79 @@ a {
 
 .menuli li a:hover {
   color: var(--pink);
+}
+
+.menu-btn {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  /* border: 3px solid #fff; */
+}
+
+.menu-btn__burger {
+  width: 20px;
+  height: 3px;
+  background: var(--brown);
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+          box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 3px;
+  background: var(--brown);
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+          box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  top: 1.65rem;
+}
+
+.menu-btn__burger::after {
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  top: 0.75rem;
+}
+
+/* ANIMATION */
+.menu-btn.open .menu-btn__burger {
+  background: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.menu-btn.open .menu-btn__burger::before {
+  -webkit-transform: rotate(0.125turn) translateY(-10px);
+          transform: rotate(0.125turn) translateY(-10px);
+}
+
+.menu-btn.open .menu-btn__burger::after {
+  -webkit-transform: rotate(-0.125turn) translateY(10px);
+          transform: rotate(-0.125turn) translateY(10px);
 }
 
 .side {
