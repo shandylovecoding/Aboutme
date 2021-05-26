@@ -24,3 +24,37 @@ menuBtn.addEventListener('click', () => {
     menuOpen = false;
   }
 });
+
+// /////////////////////////////////
+// // Function to change the navbar to a burger on smaller screens
+const burger = document.querySelector('.menu-btn');
+const nav = document.querySelector('.nav-links');
+const navLinks = document.querySelectorAll('.nav-links li');
+
+const navSlide = () => {
+  
+  //togle nav
+  burger.onclick = function ()  {
+    nav.classList.toggle('nav-active');
+
+    navLinks.forEach((link, index) => {
+      if (link.style.animation) {
+        link.style.animation = '';
+      } else {
+        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + .3}s`;
+      }
+    });
+
+  
+  };  
+  
+}
+
+navSlide();
+const navSlideBack = () => {
+  const navLinks = document.querySelector('.nav-links li');
+    navLinks.onclick = function () {
+      nav.classList.toggle('nav-inactive');
+}
+}
+navSlideBack()
