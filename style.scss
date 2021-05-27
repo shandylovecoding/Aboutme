@@ -40,7 +40,7 @@ header {
     height: 80px;
     padding-left: 30px 10%;
     z-index: 11;
-    box-shadow: 0 10px 15px -10px var(--brown);
+    box-shadow: hsla(32, 8%, 58%, 0.38) 0px 0px 8px;
 }
 
 .container {
@@ -291,6 +291,7 @@ main {
     font-family: var(--font-mono);
     font-size: clamp(var(--fz-sm), 5vw, var(--fz-md));
     font-weight: 400;
+    padding-top: 30px;
 }
 
 .big {
@@ -305,6 +306,7 @@ p {
     font-family: var(--font-mono);
     line-height: 1.3;
     text-align: center;
+    padding-top: 30px;
 
 }
 
@@ -362,8 +364,8 @@ h6 {
 .aboutPhoto {
     display: block;
     position: relative;
-    width: 240px;
-    height: 350px;
+    width: 310px;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -375,7 +377,7 @@ h6 {
 
 .aboutPhoto img {
     position: relative;
-    max-width: 210px;
+    max-width: 280px;
     border-radius: 4px;
     margin: 0px;
     padding-top:15px;
@@ -393,8 +395,8 @@ h6 {
     }
 }
 .myDream{
-    background-color:rgb(39, 34, 34);
-    box-shadow: rgb(0 0 0 ) 0px 8px 16px;
+    background-color:white;
+    box-shadow: rgba(0, 0, 0, 0.08) 0px 8px 16px;
 
 }
 .dream {
@@ -477,6 +479,6 @@ h6 {
 @media (max-width: 450px) {
 
     main {
-        padding: 0px 50px;
+        padding: 0px 80px;
     }
 }
