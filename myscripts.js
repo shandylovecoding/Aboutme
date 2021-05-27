@@ -58,3 +58,31 @@ const navSlideBack = () => {
 }
 }
 navSlideBack()
+
+///////////////fade-animation////////////////////
+
+document.addEventListener("DOMContentLoaded",function(){
+  var loading = new TimelineMax();
+  loading.fromTo(".fadeup h1 ",0.6, {
+    autoAlpha: 0,
+    y:20
+  }, {
+    autoAlpha: 1,
+    y:0
+  })
+  .fromTo(".fadeup .big ",0.6, {
+    autoAlpha: 0,
+    y:20
+  }, {
+    autoAlpha: 1,
+    y:0
+  })
+  .fromTo(".fadeup p ",0.6, {
+    autoAlpha: 0,
+    y:20
+  }, {
+    autoAlpha: 1,
+    y:0
+  })
+  ;
+});
