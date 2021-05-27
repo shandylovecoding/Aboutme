@@ -38,7 +38,7 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  background-color: var(--beige);
+  background-color: #ebdfdb;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -333,9 +333,8 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: center;
+      align-items: center;
   min-height: 100vh;
   padding: 0px;
 }
@@ -359,6 +358,7 @@ p {
   max-width: 500px;
   font-family: var(--font-mono);
   line-height: 1.3;
+  text-align: center;
 }
 
 section {
@@ -368,6 +368,8 @@ section {
 }
 
 h1 {
+  font-family: 'Dancing Script';
+  font-size: 38px;
   text-align: center;
 }
 
@@ -390,18 +392,48 @@ h6 {
 .inner {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 3fr 2fr;
-      grid-template-columns: 3fr 2fr;
-  gap: 50px;
+  -ms-grid-columns: 2fr 2fr;
+      grid-template-columns: 2fr 2fr;
+  gap: 15px;
+}
+
+.aboutText {
+  opacity: 0.7;
+  background-color: #d9c2ba;
+  text-align: center;
+  height: 100p;
+  margin-top: 150px;
+  margin-bottom: 50px;
+  margin-left: 120px;
+  color: mintcream;
+  position: relative;
+  padding: 5px;
+}
+
+.aboutText h1 {
+  position: absolute;
+  top: -50px;
 }
 
 .aboutPhoto {
   display: block;
   position: relative;
-  width: 220px;
+  width: 240px;
+  height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   -webkit-box-shadow: 0 10px 30px -15px var(--brown);
           box-shadow: 0 10px 30px -15px var(--brown);
   margin: 0px;
+  left: -20px;
+  bottom: -40px;
 }
 
 .aboutPhoto img {
@@ -409,7 +441,7 @@ h6 {
   max-width: 210px;
   border-radius: 4px;
   margin: 0px;
-  padding: 0px;
+  padding-top: 15px;
 }
 
 @media (max-width: 950px) {
@@ -418,8 +450,12 @@ h6 {
   }
   .aboutPhoto {
     margin: 50px auto 0px;
-    width: 70%;
+    width: 230px;
   }
+}
+
+.myDream {
+  background-color: white;
 }
 
 .dream {
@@ -454,7 +490,7 @@ h6 {
   -ms-grid-columns: (minmax(300px, 1fr))[3];
       grid-template-columns: repeat(3, minmax(300px, 1fr));
   gap: 15px;
-  position: relative;
+  width: 100%;
 }
 
 @media (max-width: 950px) {
@@ -478,24 +514,41 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
   position: relative;
   height: 100%;
   padding: 1.5rem 1.5rem;
   border-radius: 4px;
+  width: 300px;
+  height: 300px;
 }
 
-.dream h2,
+.dream h2 {
+  font-family: 'Dancing Script', cursive;
+  color: rosybrown;
+  font-size: 40px;
+  font-weight: 600;
+  margin-left: 10px;
+  text-align: center;
+}
+
 .hobbydiv h1 {
   font-family: 'Dancing Script', cursive;
-  color: var(--beige);
+  color: white;
   font-size: 40px;
+  font-weight: 600;
+  position: relative;
+  z-index: 10000;
 }
 
 .hobbydiv img {
   width: 250px;
   height: 250px;
+  position: absolute;
+}
+
+@media (max-width: 450px) {
+  main {
+    padding: 0px 50px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
