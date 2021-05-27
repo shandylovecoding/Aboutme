@@ -50,6 +50,8 @@ header {
   height: 80px;
   padding-left: 30px 10%;
   z-index: 11;
+  -webkit-box-shadow: 0 10px 15px -10px var(--brown);
+          box-shadow: 0 10px 15px -10px var(--brown);
 }
 
 .container {
@@ -82,8 +84,8 @@ a {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
-  width: 80px;
-  height: 80px;
+  width: 200px;
+  height: auto;
   cursor: pointer;
 }
 
@@ -115,7 +117,7 @@ a {
     position: absolute;
     right: 0px;
     height: 92vh;
-    top: 9vh;
+    top: 12vh;
     background-color: white;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -461,6 +463,8 @@ h6 {
 
 .myDream {
   background-color: white;
+  -webkit-box-shadow: 0 10px 10px -10px var(--brown);
+          box-shadow: 0 10px 10px -10px var(--brown);
 }
 
 .dream {
@@ -484,6 +488,7 @@ h6 {
   -webkit-box-align: center;
   -ms-flex-align: center;
       align-items: center;
+  width: 100%;
 }
 
 .hobbys-grid {
@@ -495,7 +500,6 @@ h6 {
   -ms-grid-columns: (minmax(300px, 1fr))[3];
       grid-template-columns: repeat(3, minmax(300px, 1fr));
   gap: 15px;
-  width: 100%;
 }
 
 @media (max-width: 950px) {
@@ -542,7 +546,7 @@ h6 {
   font-size: 40px;
   font-weight: 600;
   position: relative;
-  z-index: 10000;
+  z-index: 9;
 }
 
 .hobbydiv img {

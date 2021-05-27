@@ -40,6 +40,7 @@ header {
     height: 80px;
     padding-left: 30px 10%;
     z-index: 11;
+    box-shadow: 0 10px 15px -10px var(--brown);
 }
 
 .container {
@@ -64,8 +65,8 @@ a {
     display: flex;
     justify-content: space-between;
     position: relative;
-    width: 80px;
-    height: 80px;
+    width: 200px;
+    height:auto;
     cursor: pointer;
 }
 
@@ -98,7 +99,7 @@ a {
         position: absolute;
         right: 0px;
         height: 92vh;
-        top: 9vh;
+        top: 12vh;
         background-color: white;
         display: flex;
         flex-direction: column;
@@ -392,7 +393,9 @@ h6 {
     }
 }
 .myDream{
-    background-color:white;
+    background-color:rgb(39, 34, 34);
+    box-shadow: rgb(0 0 0 ) 0px 8px 16px;
+
 }
 .dream {
     padding-top: 50px;
@@ -409,6 +412,7 @@ h6 {
     flex-direction: column;
     -webkit-box-align: center;
     align-items: center;
+    width: 100%;
 }
 
 .hobbys-grid {
@@ -418,7 +422,7 @@ h6 {
     display: grid;
     grid-template-columns: repeat(3, minmax(300px, 1fr));
     gap: 15px;
-    width: 100%;
+    
     
 }
 
@@ -459,7 +463,7 @@ h6 {
     font-size: 40px;
     font-weight: 600;
     position: relative;
-    z-index: 10000;
+    z-index: 9;
     
 }
 
