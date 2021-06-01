@@ -14,50 +14,53 @@ var button = document.getElementById( 'menu-toggle' );
 
 ////////////////hamburger///////////////
 const menuBtn = document.querySelector('.menu-btn');
-let menuOpen = false;
-menuBtn.addEventListener('click', () => {
-  if(!menuOpen) {
-    menuBtn.classList.add('open');
-    menuOpen = true;
-  } else {
-    menuBtn.classList.remove('open');
-    menuOpen = false;
-  }
-});
-
-// /////////////////////////////////
-// // Function to change the navbar to a burger on smaller screens
-const burger = document.querySelector('.menu-btn');
 const nav = document.querySelector('.nav-links');
 const navLinks = document.querySelectorAll('.nav-links li');
 
+
+// // Function to change the navbar to a burger on smaller screens
+
+let menuOpen = false;
 const navSlide = () => {
   
   //togle nav
-  burger.onclick = function ()  {
+  menuBtn.onclick = function ()  {
     nav.classList.toggle('nav-active');
+    
+    if(!menuOpen) {
+      menuBtn.classList.add('open');
+      menuOpen = true;
+      navLinks.forEach((link, index) => {
+          link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + .3}s`;
+      });
+      
+    } else {
+      menuBtn.classList.remove('open');
+      menuOpen = false;
+      navLinks.forEach((link, index) => {
+        link.style.animation = ''
+      })
 
-    navLinks.forEach((link, index) => {
-      if (link.style.animation) {
-        link.style.animation = '';
-      } else {
-        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + .3}s`;
-      }
-    });
-
-  
+    }
+    
   };  
+  
   
 }
 
 navSlide();
-const navSlideBack = () => {
-  const navLinks = document.querySelector('.nav-links li');
-    navLinks.onclick = function () {
-      nav.classList.toggle('nav-inactive');
+
+const linkAction = () => {
+    navLinks.forEach(n => n.onclick = function(){
+      nav.classList.remove('nav-active');
+      menuBtn.classList.remove('open');
+      menuOpen = false;
+      navLinks.forEach((link, index) => {
+        link.style.animation = ''
+      })
+    } )
 }
-}
-navSlideBack()
+linkAction()
 
 ///////////////fade-animation////////////////////
 
