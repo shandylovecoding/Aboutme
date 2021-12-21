@@ -19,19 +19,23 @@
     <link rel="stylesheet" href="style.css">
     <title>Shandy</title>
     <link rel="icon" href="/images/favicon.PNG">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
 </head>
 
 <body>
     <header>
         <div class="container">
             <div>
-                <a href="/"><img src="/images/logo.PNG" class="logo"></a>
             </div>
             <div class="menu">
                 <ul class="menuli nav-links">
                     <li><a href="#about">About Me</a></li>
-                    <li><a href="#mydream">My Dream</a></li>
-                    <li><a href="#myhobby">My Hobby</a></li>
+                    <li><a href="#myExperience">Experience</a></li>
+                    <li><a href="#myProject">Work</a></li>
+                    <li><a class="resume-button" href="/FS-Dev-Resume.pdf" target="_blank"
+                            rel="noopener noreferrer">Resume</a></li>
+
+
                 </ul>
             </div>
             <div id="hamburger" class="menu-btn">
@@ -105,117 +109,120 @@
                     </p>
                 </div>
             </section>
-            <section>
-                <div id="demo" class="carousel slide" data-ride="carousel">
 
-                    <!-- Indicators -->
-                    <ul class="carousel-indicators">
-                        <li data-target="#demo" data-slide-to="0" class="active"></li>
-                        <li data-target="#demo" data-slide-to="1"></li>
-                        <li data-target="#demo" data-slide-to="2"></li>
-                    </ul>
-
-                    <!-- The slideshow -->
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="carousel-caption">
-                            <h1>I m a HongKonger</h1>
-                            </div>
-                            <img src="/images/ice.JPG" alt="Tibet" width="1100" height="800">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/images/sea.JPG" alt="Tibet" width="1100" height="800">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="/images/cambodia.JPEG" alt="England" width="1100" height="800">
-                        </div>
-                    </div>
-
-                    <!-- Left and right controls -->
-                    <a class="carousel-control-prev" href="#demo" data-slide="prev">
-                        <span class="carousel-control-prev-icon"></span>
-                    </a>
-                    <a class="carousel-control-next" href="#demo" data-slide="next">
-                        <span class="carousel-control-next-icon"></span>
-                    </a>
-                </div>
-            </section>
             <section id="about" class="aboutme">
-                <div class="inner">
+                <div class="about_inner">
                     <div class="aboutText">
-                        <h1 class="heading">..About Me..</h1>
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus reiciendis
-                            quam iste deserunt delectus voluptatibus, temporibus explicabo quis aliquam voluptatum
-                            ratione
-                            aperiam dicta aut. Commodi reiciendis quidem reprehenderit a aliquam!</p>
-                        <p></p>
+                        <h2 class="numbered-heading">..About Me..</h2>
+                        <p> Recent Bootcamp graduate who has developed a mature and responsible approach to undertake
+                            any task or situation. With a passion for developing scalable applications and become a full
+                            stack developer</p>
                     </div>
                     <div class="aboutPhoto">
                         <img src="/images/aboutpic.jpeg" alt="">
                     </div>
                 </div>
             </section>
-            <section id="mydream" class="myDream">
-                <h1>..my Dream..</h1>
-
-                <div class="dream">
-                    <h1>Be a Digital Nomads</h1>
-                    <h2>Finding Freedom By Writing Code While Travelling</h2>
+            <section id="myExperience" class="">
+                <h2 class="numbered-heading">Experiences</h2>
+                <div class="tab_inner">
+                    <div role="tablist" aria-label="Job tabs" class="tab_list"><button id="tab-0" role="tab"
+                            tabindex="-1" aria-selected="false" aria-controls="panel-0"
+                            class="tab"><span>Dotted</span></button><button id="tab-1" role="tab" tabindex="-1"
+                            aria-selected="false" aria-controls="panel-1" class="tab"><span>Xccelerate</span></button>
+                    </div>
+                    <div class="jobs__StyledTabPanels-sc-59sdss-4 jbGgbG">
+                        <div id="panel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-0" aria-hidden="false"
+                            class="jobs__StyledTabPanel-sc-59sdss-5 QgHxr fade-enter-done">
+                            <h3><span>Engineer</span><span class="company">&nbsp;@&nbsp;<a
+                                        href="https://www.upstatement.com/" class="inline-link"
+                                        rel="noopener noreferrer" target="_blank">Upstatement</a></span></h3>
+                            <p class="range">October 2021 - Present</p>
+                            <div>
+                                <ul>
+                                    <li>Communicate with multi-disciplinary teams of engineers, designers, producers,
+                                        and clients on a daily basis</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="panel-2" role="tabpanel" tabindex="-1" aria-labelledby="tab-1" aria-hidden="true"
+                            class="jobs__StyledTabPanel-sc-59sdss-5 QgHxr fade-exit-done" hidden="">
+                            <h3><span>Studio Developer</span><span class="company">&nbsp;@&nbsp;<a
+                                        href="https://web.northeastern.edu/scout/" class="inline-link"
+                                        rel="noopener noreferrer" target="_blank">Scout</a></span></h3>
+                            <p class="range">May - September 2021</p>
+                            <div>
+                                <ul>
+                                    <li>Helped solidify a brand direction for blistabloc that spans both packaging and
+                                        web</li>
+                                    <li>Interfaced with clients on a weekly basis, providing technological expertise
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="dream">
-                    <h1>Make a little Change</h1>
-                    <h2>A small step to change future</h2>
-                </div>
 
-            </section>
-            <section id="myhobby" class="myHobby">
-                <h1>..My Hobby..</h1>
-                <ul class="hobbys-grid">
-                    <li class="hobbyli">
-                        <div class="hobbydiv">
-                            <div>
-                                <h1>Camping</h1>
-                            </div><img src="/images/camping.PNG" alt="">
+    </div>
+    </section>
+    <section id="myProject" class="myProject">
+        <h2 class="numbered-heading">What I’ve Built</h2>
+
+        <ul class="project-grid">
+            <li class="projectli">
+                <div class="project_div">
+                    <div-header>
+                        <h3 class="project-title"><a href="" target="_blank" rel="noopener noreferrer">Shadow</a>
+                            <div class="project-links">
+                                <a href="https://github.com/chengbrian/shadow_beta" aria-label="External Link"
+                                    class="external" target="_blank" rel="noopener noreferrer"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </h3>
+                        <div-header class="project-description">
+                            <p>Shadow simplifies the process of teaching students how to speak, listen and write
+                                second languages online. By providing set of tools, on the online language
+                                learning platform, like the flash cards, quiz cards and dictation cards.</p>
+                        </div-header>
+                    </div-header>
+                    <div-footer>
+                        <ul class="project-tech-list">
+                            <li>React</li>
+                            <li>NodeJs</li>
+                            <li>KnexJs</li>
+                        </ul>
+                    </div-footer>
+                </div>
+            </li>
+            <li class="projectli">
+                <div class="project_div">
+                    <div-header>
+                        <h3 class="project-title"><a href="" target="_blank" rel="noopener noreferrer">TravelApp</a>
+                            <div class="project-links">
+                                <a href="https://github.com/shandylovecoding/travelApp" aria-label="External Link"
+                                    class="external" target="_blank" rel="noopener noreferrer"><i
+                                        class="fas fa-external-link-alt"></i></a>
+                            </div>
+                        </h3>
+                        <div class="project-description">
+                            <p>TravelApp let travellers explore Hong Kong like a local.Travellers could search
+                                attractions information and use bookmarking system for trip planning. Each of
+                                them could also sharing their review in the journal.Manage travel and expense
+                                reports for department team members.</p>
                         </div>
-                    </li>
-                    <li class="hobbyli">
-                        <div class="hobbydiv">
-                            <div>
-                                <h1>Coffee</h1>
-                            </div><img src="/images/coffee.PNG" alt="">
-                        </div>
-                    </li>
-                    <li class="hobbyli">
-                        <div class="hobbydiv">
-                            <div>
-                                <h1>Foodie</h1>
-                            </div><img src="/images/foodie.jpeg" alt="">
-                        </div>
-                    </li>
-                    <li class="hobbyli">
-                        <div class="hobbydiv">
-                            <div>
-                                <h1>Hiking</h1>
-                            </div><img src="/images/hiking.PNG" alt="">
-                        </div>
-                    </li>
-                    <li class="hobbyli">
-                        <div class="hobbydiv">
-                            <div>
-                                <h1>Photography</h1>
-                            </div><img src="/images/photo.PNG" alt="">
-                        </div>
-                    </li>
-                    <li class="hobbyli">
-                        <div class="hobbydiv">
-                            <div>
-                                <h1>Travel</h1>
-                            </div><img src="/images/travel.PNG" alt="">
-                        </div>
-                    </li>
-                </ul>
-            </section>
-        </main>
+                    </div-header>
+                    <div-footer>
+                        <ul class="project-tech-list">
+                            <li>ExpressJs</li>
+                            <li>NodeJs</li>
+                            <li>Prosgres</li>
+                        </ul>
+                    </div-footer>
+                </div>
+            </li>
+        </ul>
+    </section>
+    </main>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="myscripts.js"></script>
