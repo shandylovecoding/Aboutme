@@ -125,15 +125,61 @@
             </section>
             <section id="myExperience" class="">
                 <h2 class="numbered-heading">Experiences</h2>
-                <div class="tab_inner">
-                    <div role="tablist" aria-label="Job tabs" class="tab_list"><button id="tab-0" role="tab"
-                            tabindex="-1" aria-selected="false" aria-controls="panel-0"
-                            class="tab"><span>Dotted</span></button><button id="tab-1" role="tab" tabindex="-1"
-                            aria-selected="false" aria-controls="panel-1" class="tab"><span>Xccelerate</span></button>
+
+                <div id="myExperience" class="grid tab_inner" data-state="section1">
+                    <div class="tab_list" role="tablist" aria-label="Tabs" class="tab_list">
+                        <button class="tab" role="tab" aria-selected="true" aria-controls="panel-1" id="tab-1"
+                            tabindex="0" data-setState="section1">Dotted</button>
+                        <button class="tab" role="tab" aria-selected="false" aria-controls="panel-2" id="tab-2"
+                            tabindex="-1" data-setState="section2">Xccelerate</button>
+                    </div>
+
+                    <article id="panel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-1" data-scene="section1">
+                        <h3><span>Software Engineer</span><span class="company">&nbsp;@&nbsp;Dotted</span>
+                        </h3>
+                        <p class="range">October 2021 - Present</p>
+                        <div class="exp_content">
+                            <ul>
+                                <li>Developed and maintained code for in-house web app primarily using Flutter and
+                                    Django</li>
+                                <li>Worked closely with designers and management team to develop, document, and manage the product website</li>
+
+                            </ul>
+                        </div>
+                    </article>
+
+                    <article id="panel-2" role="tabpanel" tabindex="0" aria-labelledby="tab-2" data-scene="section2">
+                        <h3><span>Bootcamp Graduate</span><span class="company">&nbsp;@&nbsp;<a
+                                    href="https://xccelerate.co/" class="inline-link" rel="noopener noreferrer"
+                                    target="_blank">Xccelerate</a></span></h3>
+                        <p class="range">May - September 2021</p>
+                        <div>
+                            <ul>
+                                <li>Full-time Full Stack Web Development Immersive</li>
+                                <li> Coding Bootcamp is
+                                    designed for students with a burning desire to learn the most relevant coding
+                                    languages
+                                    and frameworks in the software development industry
+                                </li>
+                            </ul>
+                        </div>
+                    </article>
+
+
+                </div>
+            </section>
+            <!-- <section id="myExperience" class="">
+                <h2 class="numbered-heading">Experiences</h2>
+                <div class="tab_inner"  data-state="section1">
+                    <div role="tablist" aria-label="Tabs" class="tab_list">
+                        <button id="tab-0" role="tab" tabindex="0" aria-selected="false" aria-controls="panel-1 " data-setState="section1"
+                            data-setState="panel-0" class="tab"><span>Dotted</span></button>
+
+                        <button id="tab-1" role="tab" tabindex="-1" aria-selected="false" aria-controls="panel-2" data-setState="section2"
+                            data-setState="panel-1" class="tab"><span>Xccelerate</span></button>
                     </div>
                     <div class="jobs__StyledTabPanels-sc-59sdss-4 jbGgbG">
-                        <div id="panel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-0" aria-hidden="false"
-                            class="jobs__StyledTabPanel-sc-59sdss-5 QgHxr fade-enter-done">
+                        <article id="panel-1" role="tabpanel" tabindex="0" aria-labelledby="tab-0" data-scene="section1">
                             <h3><span>Engineer</span><span class="company">&nbsp;@&nbsp;<a
                                         href="https://www.upstatement.com/" class="inline-link"
                                         rel="noopener noreferrer" target="_blank">Upstatement</a></span></h3>
@@ -144,9 +190,8 @@
                                         and clients on a daily basis</li>
                                 </ul>
                             </div>
-                        </div>
-                        <div id="panel-2" role="tabpanel" tabindex="-1" aria-labelledby="tab-1" aria-hidden="true"
-                            class="jobs__StyledTabPanel-sc-59sdss-5 QgHxr fade-exit-done" hidden="">
+                        </article>
+                        <article id="panel-2" role="tabpanel" tabindex="-1" aria-labelledby="tab-1" data-scene="section2" hidden>
                             <h3><span>Studio Developer</span><span class="company">&nbsp;@&nbsp;<a
                                         href="https://web.northeastern.edu/scout/" class="inline-link"
                                         rel="noopener noreferrer" target="_blank">Scout</a></span></h3>
@@ -159,70 +204,72 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
+                        </article>
                     </div>
                 </div>
 
     </div>
-    </section>
-    <section id="myProject" class="myProject">
-        <h2 class="numbered-heading">What I’ve Built</h2>
+    </section> -->
+            <section id="myProject" class="myProject">
+                <h2 class="numbered-heading">What I’ve Built</h2>
 
-        <ul class="project-grid">
-            <li class="projectli">
-                <div class="project_div">
-                    <div-header>
-                        <h3 class="project-title"><a href="" target="_blank" rel="noopener noreferrer">Shadow</a>
-                            <div class="project-links">
-                                <a href="https://github.com/chengbrian/shadow_beta" aria-label="External Link"
-                                    class="external" target="_blank" rel="noopener noreferrer"><i
-                                        class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </h3>
-                        <div-header class="project-description">
-                            <p>Shadow simplifies the process of teaching students how to speak, listen and write
-                                second languages online. By providing set of tools, on the online language
-                                learning platform, like the flash cards, quiz cards and dictation cards.</p>
-                        </div-header>
-                    </div-header>
-                    <div-footer>
-                        <ul class="project-tech-list">
-                            <li>React</li>
-                            <li>NodeJs</li>
-                            <li>KnexJs</li>
-                        </ul>
-                    </div-footer>
-                </div>
-            </li>
-            <li class="projectli">
-                <div class="project_div">
-                    <div-header>
-                        <h3 class="project-title"><a href="" target="_blank" rel="noopener noreferrer">TravelApp</a>
-                            <div class="project-links">
-                                <a href="https://github.com/shandylovecoding/travelApp" aria-label="External Link"
-                                    class="external" target="_blank" rel="noopener noreferrer"><i
-                                        class="fas fa-external-link-alt"></i></a>
-                            </div>
-                        </h3>
-                        <div class="project-description">
-                            <p>TravelApp let travellers explore Hong Kong like a local.Travellers could search
-                                attractions information and use bookmarking system for trip planning. Each of
-                                them could also sharing their review in the journal.Manage travel and expense
-                                reports for department team members.</p>
+                <ul class="project-grid">
+                    <li class="projectli">
+                        <div class="project_div">
+                            <div-header>
+                                <h3 class="project-title"><a href="" target="_blank"
+                                        rel="noopener noreferrer">Shadow</a>
+                                    <div class="project-links">
+                                        <a href="https://github.com/chengbrian/shadow_beta" aria-label="External Link"
+                                            class="external" target="_blank" rel="noopener noreferrer"><i
+                                                class="fas fa-external-link-alt"></i></a>
+                                    </div>
+                                </h3>
+                                <div-header class="project-description">
+                                    <p>Shadow simplifies the process of teaching students how to speak, listen and write
+                                        second languages online. By providing set of tools, on the online language
+                                        learning platform, like the flash cards, quiz cards and dictation cards.</p>
+                                </div-header>
+                            </div-header>
+                            <div-footer>
+                                <ul class="project-tech-list">
+                                    <li>React</li>
+                                    <li>NodeJs</li>
+                                    <li>KnexJs</li>
+                                </ul>
+                            </div-footer>
                         </div>
-                    </div-header>
-                    <div-footer>
-                        <ul class="project-tech-list">
-                            <li>ExpressJs</li>
-                            <li>NodeJs</li>
-                            <li>Prosgres</li>
-                        </ul>
-                    </div-footer>
-                </div>
-            </li>
-        </ul>
-    </section>
-    </main>
+                    </li>
+                    <li class="projectli">
+                        <div class="project_div">
+                            <div-header>
+                                <h3 class="project-title"><a href="" target="_blank"
+                                        rel="noopener noreferrer">TravelApp</a>
+                                    <div class="project-links">
+                                        <a href="https://github.com/shandylovecoding/travelApp"
+                                            aria-label="External Link" class="external" target="_blank"
+                                            rel="noopener noreferrer"><i class="fas fa-external-link-alt"></i></a>
+                                    </div>
+                                </h3>
+                                <div class="project-description">
+                                    <p>TravelApp let travellers explore Hong Kong like a local.Travellers could search
+                                        attractions information and use bookmarking system for trip planning. Each of
+                                        them could also sharing their review in the journal.Manage travel and expense
+                                        reports for department team members.</p>
+                                </div>
+                            </div-header>
+                            <div-footer>
+                                <ul class="project-tech-list">
+                                    <li>ExpressJs</li>
+                                    <li>NodeJs</li>
+                                    <li>Prosgres</li>
+                                </ul>
+                            </div-footer>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+        </main>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="myscripts.js"></script>

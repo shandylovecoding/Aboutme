@@ -90,10 +90,9 @@ document.addEventListener("DOMContentLoaded",function(){
   ;
 });
 /////////////////////
-
 console.clear();
 
-const grid = document.querySelector('.tab_inner');
+const grid = document.querySelector('.grid');
 const tabs = document.querySelectorAll('[role="tab"]');
 const tabList = document.querySelector('[role="tablist"]');
 
@@ -106,6 +105,35 @@ for (const [index, tab] of tabs.entries()) {
 tabList.addEventListener('click', ({ target }) => {
   //const tg = e.target;
   //const parent = tg.parentNode;
+
+  const navSlide = () => {
+  
+    //togle nav
+    menuBtn.onclick = function ()  {
+      nav.classList.toggle('nav-active');
+      
+      if(!menuOpen) {
+        menuBtn.classList.add('open');
+        menuOpen = true;
+        navLinks.forEach((link, index) => {
+            link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + .3}s`;
+        });
+        
+      } else {
+        menuBtn.classList.remove('open');
+        menuOpen = false;
+        navLinks.forEach((link, index) => {
+          link.style.animation = ''
+        })
+  
+      }
+      
+    };  
+    
+    
+  }
+  
+  navSlide();
 
   if(target.tagName === 'BUTTON') {
     const index = [...tabList.children].indexOf(target);
@@ -144,5 +172,4 @@ tabList.addEventListener("keydown", e => {
     tabs[tabFocus].focus();
   }
 });
-
 
